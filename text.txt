@@ -1,0 +1,10 @@
+<Button variant="primary"
+    onClick={() => setShowAddModal(true)}>
+    thêm sản phẩm
+    </Button>
+
+    <Button variant="outline-success">Button</Button>
+
+
+    export NODE_OPTIONS=--openssl-legacy-provider
+    npm start
