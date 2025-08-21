@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Ecommerce-Web-ShopAppPEUS/static/css/main.e5d3670f.css",
-    "main.js": "/Ecommerce-Web-ShopAppPEUS/static/js/main.454fa479.js",
+    "main.js": "/Ecommerce-Web-ShopAppPEUS/static/js/main.4735bc98.js",
     "static/js/453.4a8997da.chunk.js": "/Ecommerce-Web-ShopAppPEUS/static/js/453.4a8997da.chunk.js",
     "static/media/sample_profile.png": "/Ecommerce-Web-ShopAppPEUS/static/media/sample_profile.5faf09a7795d28bf5a2b.png",
     "index.html": "/Ecommerce-Web-ShopAppPEUS/index.html",
     "main.e5d3670f.css.map": "/Ecommerce-Web-ShopAppPEUS/static/css/main.e5d3670f.css.map",
-    "main.454fa479.js.map": "/Ecommerce-Web-ShopAppPEUS/static/js/main.454fa479.js.map",
+    "main.4735bc98.js.map": "/Ecommerce-Web-ShopAppPEUS/static/js/main.4735bc98.js.map",
     "453.4a8997da.chunk.js.map": "/Ecommerce-Web-ShopAppPEUS/static/js/453.4a8997da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e5d3670f.css",
-    "static/js/main.454fa479.js"
+    "static/js/main.4735bc98.js"
   ]
 }
