@@ -16,7 +16,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AdminNavbar from "./components/NavBars";
 import Register from "./pages/Register";
-import Dashboard from "./pages/Dashboard";
+// import Dashboard from "./pages/Dashboard";
 import Verify from "./users/Verify";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
@@ -60,7 +60,7 @@ const App = () => {
     <div className="container">
     <Router basename="/Ecommerce-Web-ShopAppPEUS">
       <Routes>
-      <Route path="/" element={user ? <Navigate to="/" /> : <RedirectToLogin />} />
+      <Route path="/" element={<Navigate to={user ? "/table" : "/login"} replace />} />
 
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset/:token" element={<ResetPassword />} />
@@ -72,7 +72,7 @@ const App = () => {
         </Route>
 
         <Route element={<PrivateRoute />}>
-        <Route path="/Table" element={<Table />} />
+        <Route path="/table" element={<Table />} />
 
         
 
