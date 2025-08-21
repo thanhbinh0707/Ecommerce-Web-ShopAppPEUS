@@ -1,0 +1,78 @@
+/* src/pages/Login.css */
+
+/* Full height để nền phủ toàn bộ */
+html, body, #root { height: 100%; }
+
+/* Nền gradient sáng áp trực tiếp lên body khi vào trang login */
+body.login-bg {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(900px 450px at 20% 20%, rgba(120, 164, 255, 0.18), transparent 60%),
+    radial-gradient(900px 450px at 80% 30%, rgba(255, 146, 204, 0.18), transparent 60%),
+    linear-gradient(180deg, #f9fbff 0%, #eef2ff 100%);
+  background-attachment: fixed;
+}
+
+/* Wrapper */
+.login-hero { min-height: 100vh; width: 100%; }
+
+/* Card nổi nhẹ, nền trắng */
+.login-card { border-radius: 18px; background: #fff; }
+
+/* Logo tròn đơn giản */
+.brand-circle {
+  width: 54px; height: 54px; border-radius: 50%;
+  display: inline-grid; place-items: center;
+  background: linear-gradient(135deg, #5b8aff, #8a5bff);
+  color: #fff; font-weight: 800; letter-spacing: .5px;
+  box-shadow: 0 8px 24px rgba(91, 138, 255, .25);
+}
+
+/* Focus input rõ hơn */
+.form-control:focus {
+  border-color: #6ea8fe !important;
+  box-shadow: 0 0 0 .2rem rgba(110,168,254,.25) !important;
+}
+
+/* Nút icon show/hide */
+.icon-btn { display: inline-grid; place-items: center; padding: 0 12px; }
+
+/* Primary gradient cho nút Login */
+.btn-primary {
+  background: linear-gradient(135deg, #5b8aff, #8a5bff);
+  border: none;
+}
+.btn-primary:hover { filter: brightness(0.98); }
+/* Password field with inner icon */
+.password-field {
+  position: relative;
+}
+
+.password-field .form-control {
+  padding-right: 46px; /* phòng icon chồng chữ nếu không dùng pe-5 */
+}
+
+/* Nút icon không viền, nằm trong input */
+.pw-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;                 /* chỉnh nếu muốn sát mép hơn */
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  padding: 6px;
+  display: grid;
+  place-items: center;
+  color: #6c757d;              /* giống Bootstrap text-secondary */
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* Hover/focus màu đậm hơn */
+.pw-toggle:hover { color: #495057; }
+
+/* Khi input focus thì icon highlight theo */
+.password-field .form-control:focus ~ .pw-toggle {
+  color: #0d6efd;              /* Bootstrap primary */
+}
