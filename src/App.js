@@ -58,7 +58,7 @@ const App = () => {
   };
   return (
     <div className="container">
-    <Router>
+    <Router basename="/Ecommerce-Web-ShopAppPEUS">
       <Routes>
       <Route path="/" element={user ? <Navigate to="/" /> : <RedirectToLogin />} />
 
